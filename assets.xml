@@ -1,0 +1,39 @@
+<theme>
+    <include>./assets/colors/${system.theme}.xml</include>
+    
+    <colorScheme name="dark">
+        <variables>
+            <backgroundColor>202020</backgroundColor>
+            <boxesColor>303030</boxesColor>
+            <sidebarColor>303030</sidebarColor>
+            <footerColor>303030</footerColor>
+            <gamelistColor>818181</gamelistColor>
+        </variables>
+
+    </colorScheme>
+
+    <colorScheme name="light">
+        <variables>
+            <backgroundColor>c9c9c9</backgroundColor>
+            <boxesColor>ffffff</boxesColor>
+            <sidebarColor>2d2f3b</sidebarColor>
+            <footerColor>262533</footerColor>
+            <gamelistColor>818181</gamelistColor>
+        </variables>
+    </colorScheme>
+
+    <colorScheme name="light, dark">
+        <variables>
+            <systemColor>${systemColor}</systemColor>
+            <gamelistHelpColor>FFFFFF</gamelistHelpColor>
+            <!-- <mainFont>./../assets/OPENSANS.TTF</mainFont>
+            <lightFont>./../assets/LIGHT.TTF</lightFont>
+            <gamelistLogo>./../assets/gamelist_logos/${system.theme}.svg</gamelistLogo>
+            <systemLogo>./../assets/system_logos/${system.theme}.svg</systemLogo> -->
+            <!-- <box>./../assets/box.png</box> -->
+            <textColor>c9c9c9</textColor>
+            <gamelistSelectedColor>FFFFFF</gamelistSelectedColor>
+        </variables>
+    </colorScheme>
+    
+</theme>

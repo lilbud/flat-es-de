@@ -1,0 +1,27 @@
+<theme>
+	<include>./../assets.xml</include>
+
+	<variables>
+		<box>./../assets/box.png</box>
+		<mainFont>./../assets/OPENSANS.TTF</mainFont>
+        <lightFont>./../assets/LIGHT.TTF</lightFont>
+        <gamelistLogo>./../assets/gamelist_logos/${system.theme}.svg</gamelistLogo>
+        <systemLogo>./../assets/system_logos/${system.theme}.svg</systemLogo>
+	</variables>
+
+	<view name="gamelist">
+		<textlist name="gamelist">
+			<pos>0.176 0.194</pos>
+			<size>0.648 0.68</size>
+			<horizontalAlignment>center</horizontalAlignment>
+		</textlist>
+
+		<image name="gamelistBox">
+			<pos>0.155 0.155</pos>
+			<size>0.690 0.741</size>
+			<path>${box}</path>
+			<color>${boxesColor}</color>
+		</image>
+
+	</view>
+</theme>

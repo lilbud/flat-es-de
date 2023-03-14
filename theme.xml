@@ -1,0 +1,129 @@
+<theme>
+	<include>./assets.xml</include>
+
+	<variables>
+		<box>./assets/box.png</box>
+		<mainFont>./assets/OPENSANS.TTF</mainFont>
+        <lightFont>./assets/LIGHT.TTF</lightFont>
+        <gamelistLogo>./assets/gamelist_logos/${system.theme}.svg</gamelistLogo>
+        <systemLogo>./assets/system_logos/${system.theme}.svg</systemLogo>
+	</variables>
+
+	<variant name="Basic">
+		<include>./variants/basic.xml</include>
+	</variant>
+
+	<variant name="Detailed">
+		<include>./variants/detailed.xml</include>
+	</variant>
+
+	<view name="system,gamelist">
+		<helpsystem name="help">
+			<textColor>ffffff</textColor>
+			<iconColor>ffffff</iconColor>
+			<textColorDimmed>ffffff</textColorDimmed>
+			<iconColorDimmed>ffffff</iconColorDimmed>
+			<origin>0.5 0</origin>
+			<pos>0.5 0.9515</pos>
+		</helpsystem>
+
+		<image name="background">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./assets/bg.png</path>
+			<color>${systemColor}</color>
+			<zIndex>0</zIndex>
+		</image>
+	</view>
+
+	<view name="system">
+		<carousel name="systemCarousel">
+			<type>horizontal</type>
+			<staticImage>${systemLogo}</staticImage>
+			<imageInterpolation>linear</imageInterpolation>
+			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+		</carousel>
+
+		<text name="gameCounter">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.6437</pos>
+			<size>1 0.056</size>
+			<systemdata>gamecount</systemdata>
+			<fontSize>0.035</fontSize>
+			<horizontalAlignment>center</horizontalAlignment>
+			<backgroundColor>FFFFFFBB</backgroundColor>
+			<letterCase>uppercase</letterCase>
+			<zIndex>50</zIndex>
+		</text>
+	</view>
+
+	<view name="gamelist">
+		<image name="logo_box">
+			<pos>0 0</pos>
+			<size>0.173 0.116</size>
+			<path>${box}</path>
+			<color>${systemColor}</color>
+			<zIndex>1</zIndex>
+		</image>
+
+		<image name="background">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${box}</path>
+			<color>${backgroundColor}</color>
+			<zIndex>0</zIndex>
+		</image>
+
+		<image name="header">
+			<pos>0.173 0</pos>
+			<size>0.827 0.116</size>
+			<path>${box}</path>
+			<color>${boxesColor}</color>
+			<zIndex>1</zIndex>
+		</image>
+
+		<image name="footer">
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<size>1 0.066</size>
+			<path>${box}</path>
+			<color>${footerColor}</color>
+			<zIndex>50</zIndex>
+		</image>
+
+		<image name="logo">
+			<path>${gamelistLogo}</path>
+			<pos>0.0865 0.058</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>0.139 0.06</maxSize>
+			<zIndex>45</zIndex>
+		</image>
+
+		<text name="systemName">
+			<text>${system.fullName}</text>
+			<pos>0.194 0.058</pos>
+			<size>0.75 0.077</size>
+			<origin>0.0 0.5</origin>
+			<color>${textColor}</color>
+			<letterCase>uppercase</letterCase>
+			<fontPath>${lightFont}</fontPath>
+			<fontSize>0.077</fontSize>
+			<zIndex>5</zIndex>
+		</text>
+
+		<textlist name="gamelist">
+			<selectorColor>${systemColor}</selectorColor>
+			<fontPath>${mainFont}</fontPath>
+			<selectedColor>${gamelistSelectedColor}</selectedColor>
+			<primaryColor>${gamelistColor}</primaryColor>
+			<secondaryColor>${gamelistColor}</secondaryColor>
+			<fontSize>0.03</fontSize>
+			<horizontalMargin>0.01</horizontalMargin>
+		</textlist>
+	</view>
+
+
+
+	
+
+</theme>
