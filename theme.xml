@@ -17,7 +17,7 @@
 		<include>./variants/detailed.xml</include>
 	</variant>
 	
-	<variant name="Detailed">
+	<variant name="Video">
 		<include>./variants/video.xml</include>
 	</variant>
 
