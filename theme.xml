@@ -16,6 +16,10 @@
 	<variant name="Detailed">
 		<include>./variants/detailed.xml</include>
 	</variant>
+	
+	<variant name="Detailed">
+		<include>./variants/video.xml</include>
+	</variant>
 
 	<view name="system,gamelist">
 		<helpsystem name="help">
