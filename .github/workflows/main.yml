@@ -27,16 +27,22 @@ jobs:
       - uses: actions/checkout@v4
 
       # Clones newest logos from the Gitlab Repo and copies to proper folders
-      - name: grab new logos and copy to specified folders
+      - name: grab new logos
+        run: git clone "https://gitlab.com/es-de/themes/system-logos.git"
+
+      # Clones newest system-metadata from the Gitlab Repo and copy to proper folder
+      - name: grab new metadata
+        run: git clone "https://gitlab.com/es-de/themes/system-metadata.git"
+          
+      # copy logos to proper folders
+      - name: copy logos
         run: |
-          git clone "https://gitlab.com/es-de/themes/system-logos.git"
           cp -r ./system-logos/system-logo-white/. $WhiteLogoDir
           cp -r ./system-logos/system-logo-color/. $ColorLogoDir
-      
-      # Clones newest system-metadata from the Gitlab Repo and copy to proper folder
-      - name: grab new metadata and copy to specified folder
+
+      # copy metadata
+      - name: copy metadata
         run: |
-          git clone "https://gitlab.com/es-de/themes/system-metadata.git"
           cp -r ./system-metadata/. $MetadataDir
 
       # remove cloned folders
