@@ -34,9 +34,9 @@ jobs:
           cp -r ./system-logos/system-logo-color/. $ColorLogoDir
       
       # Clones newest system-metadata from the Gitlab Repo and copy to proper folder
-      - name: grab new logos
+      - name: grab new metadata and copy to specified folder
         run: |
-          git clone "https://gitlab.com/es-de/themes/system-metadata"
+          git clone "https://gitlab.com/es-de/themes/system-metadata.git"
           cp -r ./system-metadata/. $MetadataDir
 
       # remove cloned folders
