@@ -55,7 +55,6 @@
 			<maxSize>0.185 0.327</maxSize>
 			<origin>0 0</origin>
 			<zIndex>2</zIndex>
-			<!-- <default>${box}</default> -->
 			<interpolation>linear</interpolation>
 		</image>
 
@@ -70,7 +69,7 @@
 
 		<text name="md_lbl_rating">
 			<pos>0.014 0.160</pos>
-			<text>Rating:</text>
+			<text>${langLabelRating}</text>
 		</text>
 
 		<rating name="md_rating">
@@ -82,7 +81,7 @@
 		
 		<text name="md_lbl_players">
 			<pos>0.014 0.270</pos>
-			<text>Players:</text>
+			<text>${langLabelPlayers}</text>
 		</text>
 
 		<text name="md_players">
@@ -92,7 +91,7 @@
 
 		<text name="md_lbl_genre">
 			<pos>0.014 0.380</pos>
-			<text>Genre:</text>
+			<text>${langLabelGenre}</text>
 		</text>
 		
 		<text name="md_genre">
@@ -102,7 +101,7 @@
 		
 		<text name="md_lbl_developer">
 			<pos>0.014 0.490</pos>
-			<text>Developer:</text>
+			<text>${langLabelDeveloper}</text>
 		</text>
 
 		<text name="md_developer">
@@ -112,7 +111,7 @@
 		
 		<text name="md_lbl_releasedate">
 			<pos>0.014 0.600</pos>
-			<text>Released:</text>
+			<text>${langLabelReleaseDate}</text>
 		</text>
 		
 		<datetime name="md_releasedate">
@@ -125,7 +124,7 @@
 		
 		<text name="md_lbl_playcount">
 			<pos>0.014 0.710</pos>
-			<text>Times Played:</text>
+			<text>${langLabelPlayCount}</text>
 		</text>
 		
 		<text name="md_playcount">

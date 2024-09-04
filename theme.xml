@@ -1,5 +1,6 @@
 <theme>
 	<include>./assets.xml</include>
+	<include>./variables.xml</include>
 
 	<variables>
 		<box>./assets/box.png</box>
@@ -128,9 +129,4 @@
 			<horizontalMargin>0.01</horizontalMargin>
 		</textlist>
 	</view>
-
-
-
-	
-
 </theme>

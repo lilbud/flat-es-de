@@ -1,0 +1,10 @@
+<theme>
+    <variables>
+        <langLabelRating>Rating:</langLabelRating>
+        <langLabelPlayers>Players:</langLabelPlayers>
+        <langLabelGenre>Genre:</langLabelGenre>
+        <langLabelDeveloper>Developer:</langLabelDeveloper>
+        <langLabelReleaseDate>Released:</langLabelReleaseDate>
+        <langLabelPlayCount>Times Played:</langLabelPlayCount>
+    </variables>
+</theme>

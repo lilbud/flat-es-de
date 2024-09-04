@@ -7,7 +7,6 @@
             <boxesColor>303030</boxesColor>
             <sidebarColor>303030</sidebarColor>
             <footerColor>303030</footerColor>
-            <gamelistColor>818181</gamelistColor>
         </variables>
 
     </colorScheme>
@@ -18,7 +17,6 @@
             <boxesColor>ffffff</boxesColor>
             <sidebarColor>2d2f3b</sidebarColor>
             <footerColor>262533</footerColor>
-            <gamelistColor>818181</gamelistColor>
         </variables>
     </colorScheme>
 
@@ -26,13 +24,9 @@
         <variables>
             <systemColor>${systemColor}</systemColor>
             <gamelistHelpColor>FFFFFF</gamelistHelpColor>
-            <!-- <mainFont>./../assets/OPENSANS.TTF</mainFont>
-            <lightFont>./../assets/LIGHT.TTF</lightFont>
-            <gamelistLogo>./../assets/gamelist_logos/${system.theme}.svg</gamelistLogo>
-            <systemLogo>./../assets/system_logos/${system.theme}.svg</systemLogo> -->
-            <!-- <box>./../assets/box.png</box> -->
             <textColor>c9c9c9</textColor>
             <gamelistSelectedColor>FFFFFF</gamelistSelectedColor>
+            <gamelistColor>818181</gamelistColor>
         </variables>
     </colorScheme>
     
